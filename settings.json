@@ -1,7 +1,7 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "STAFF",
+    "username": "imgonnacream",
     "password": "",
     "type": "offline"
   },
@@ -9,7 +9,7 @@
     "ip": "ThunderWolfSMP.aternos.me",
     "port": 24823,
     "version": "1.20.1",
-    "try-creative": true
+    "try-creative": false
   },
   "position": {
     "enabled": true,
@@ -19,7 +19,7 @@
   },
   "utils": {
     "auto-auth": {
-      "enabled": false,
+      "enabled": true,
       "password": "chalol78"
     },
     "anti-afk": {
@@ -30,33 +30,26 @@
       "enabled": false,
       "repeat": false,
       "repeat-delay": 120,
-      "messages":[
-      ]
+      "messages": []
     },
-    "chat-log": true,
+    "chat-log": false,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 10000,
-    "max-reconnect-delay": 120000,
+    "auto-reconnect-delay": 15000,
+    "max-reconnect-delay": 300000,
     "periodic-rejoin": {
-      "enabled": false,
-      "min-interval": 20,
-      "max-interval": 60
+      "enabled": false
     }
   },
   "movement": {
     "enabled": false,
     "circle-walk": {
-      "enabled": true,
-      "radius": 4,
-      "speed": 2000
+      "enabled": false
     },
     "look-around": {
-      "enabled": false,
-      "interval": 5000
+      "enabled": false
     },
     "random-jump": {
-      "enabled": false,
-      "interval": 10000
+      "enabled": false
     }
   },
   "modules": {
@@ -76,10 +69,10 @@
   },
   "discord": {
     "enabled": false,
-    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "webhookUrl": "",
     "events": {
-      "connect": true,
-      "disconnect": true,
+      "connect": false,
+      "disconnect": false,
       "chat": false
     }
   },
